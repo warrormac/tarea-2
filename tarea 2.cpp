@@ -29,7 +29,7 @@ int main (void)
 
 int main()
 {
-  int array[100], n, c, d, swap;
+  int array[400000], n, c, d, swap;
 
   printf("ingrese sus elementos\n");
   std::cin>>n;
@@ -41,7 +41,7 @@ int main()
   {
     for (d = 0 ; d < n - c - 1; d++)
     {
-      if (array[d] > array[d+1]) /* For decreasing order use < */
+      if (array[d] > array[d+1])
       {
         swap       = array[d];
         array[d]   = array[d+1];
